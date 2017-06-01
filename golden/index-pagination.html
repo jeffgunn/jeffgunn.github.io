@@ -114,12 +114,12 @@
       background-size: contain;
     }
     .vid-top {
-      width: 90%;
+      width: 100%;
       text-align: center;
-      margin: 0 auto 30px auto;
     }
     .vid-top a {
       display: inline-block;
+      margin: 0 auto 30px auto;
       padding: 6px 16px;
       color: #333;
       font-family: BrandonGrotesque-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -181,7 +181,7 @@
         font-size: 0.9em;
       }
       .vid-top a {
-        width: 100%;
+        width: 90%;
       }
     }
     </style>
@@ -204,7 +204,7 @@
     <div id="vid-page">
       <!-- Begin Video Template -->
       <!--
-      <div class="video-module">
+      <div class="vid-module">
         <hr class="vid-seper">
         <section class="vid-container">
           <div class="vid-title">TITLE HERE</div>
@@ -279,22 +279,22 @@
         </section>
       </div>
     </div>
-
+    <!--Pagination-->
     <div class="vid-paging">
       <div id="pagingControls"></div>
     </div>
-
-    <section class="vid-top">
+    <!--Back to Top-->
+    <div class="vid-top">
       <a href="#videos">Back to Top</a>
-    </section>
-
+    </div>
   </div>
+  <!--Pagination JS-->
   <script type="text/javascript">
     var pager = new GoldVid.Pager();
     $(document).ready(function() {
-        pager.paragraphsPerPage = 5; // set amount elements per page
-        pager.pagingContainer = $('#vid-page'); // set of main container
-        pager.paragraphs = $('div.vid-module', pager.pagingContainer); // set of required containers
+        pager.paragraphsPerPage = 5; // Set amount videos per page
+        pager.pagingContainer = $('#vid-page'); // Set of main container
+        pager.paragraphs = $('div.vid-module', pager.pagingContainer); // Set of required containers
         pager.showPage(1);
     });
   </script>
