@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <title>Videos</title>
+
+    <!-- Import Golden's Styles -->
+    <link rel="stylesheet" href="http://www.goldenpeanut.com/css/gp.min.css?v=1.0.0.14">
+    <!-- End Import Golden's Styles -->
+
+    <!-- Styles/JS for Golden -->
+    <script src="jquery.min.js"></script>
+    <script src="pager.js"></script>
+    <style media="screen">
+    .vid-info {
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      padding: 15px 0 0 0;
+      text-align: center;
+      color: #fff;
+      font-family: AvenirLTStd-Light,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 1em;
+      line-height: 25px;
+      background-color: #333d47;
+      border-bottom: 5px solid #fec842;
+      border-radius: 5px 5px 0 0;
+    }
+    .vid-info h1 {
+      margin: 0 0 20px 0;
+      color: #fec842;
+      font-family: BrandonGrotesque-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: titlecase;
+    }
+    .vid-social {
+      margin: 25px 0 10px 0;
+      font-size: .9em;
+      color: #d6d8da;
+    }
+    .vid-icon-social {
+      display: block;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .vid-icon-social img {
+      display: inline-block;
+      margin: 0 10px;
+      width: 40px;
+      opacity: 0.8;
+    }
+    .vid-icon-social img:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    .vid-info .vid-embed {
+      border-top: 1px solid #fec842;
+      border-bottom: 1px solid #fec842;
+    }
+    .vid-container {
+      width: 90%;
+      max-width: 650px;
+      margin: 40px auto;
+    }
+    .vid-title {
+      margin: 0;
+      padding-bottom: 10px;
+      text-align: center;
+      font-family: BrandonGrotesque-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      color: #393939;
+      text-transform: uppercase;
+      font-size: 1.6em;
+      letter-spacing: .1em;
+    }
+    .vid-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      max-width: 100%;
+      height: 0;
+      overflow: hidden;
+    }
+    .vid-embed iframe, .vid-embed object, .vid-embed embed {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .vid-content {
+      margin: 0;
+      padding: 40px 30px 25px 30px;
+      text-align: left;
+      font-family: AvenirLTStd-Light,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 1em;
+      line-height: 25px;
+      background-color: #e5e9ec;
+      background-image: url(vid-shadow-light.jpg);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: contain;
+      border-bottom: 5px solid #fec842;
+    }
+    .vid-content-feature {
+      margin: 0;
+      padding: 25px 30px 25px 30px;
+      text-align: left;
+      font-family: AvenirLTStd-Light,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 1.1em;
+      line-height: 25px;
+      background-color: #4d565e;
+      background-image: url(vid-shadow-dark.jpg);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: contain;
+    }
+    .vid-top {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto 30px auto;
+    }
+    .vid-top a {
+      display: inline-block;
+      padding: 6px 16px;
+      color: #333;
+      font-family: BrandonGrotesque-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: bold;
+      font-size: 11.2px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 0;
+      border: 1px solid #333;
+      background: transparent;
+      cursor: pointer;
+    }
+    .vid-top a:hover {
+      background: #aaa;
+    }
+    .vid-seper {
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+      border: 0;
+      border-bottom: 1px solid #f1f2f4;
+    }
+    .vid-paging {
+      display: block;
+      width: 90%;
+      max-width: 650px;
+      margin: 0 auto 30px auto;
+      padding-bottom: 20px;
+      text-align: center;
+      font-family: BrandonGrotesque-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 1.2em;
+      letter-spacing: .1em;
+      color: #393939;
+      text-transform: uppercase;
+      border-bottom: 1px solid #f1f2f4;
+    }
+    .vid-paging a {
+      color: #aaa;
+    }
+    .vid-paging a:hover {
+      color: #fec842;
+      text-decoration: none;
+    }
+    #pagingControls ul {
+      display: inline;
+      padding-left: 0.5em;
+    }
+    #pagingControls li {
+      display:inline;
+      padding:0 0.5em;
+    }
+    @media screen and (max-width: 580px) {
+      .vid-title {
+        font-size: 1.3em;
+      }
+      .vid-content, .vid-content-feature {
+        font-size: 0.9em;
+      }
+      .vid-top a {
+        width: 100%;
+      }
+    }
+    </style>
+    <!--End Styles for Golden-->
+
+  </head>
+  <body style="padding: 20px 0;">
+
+  <!--BEGIN CUSTOM HTML-->
+  <div id="videos">
+    <!-- Header -->
+    <section class="vid-info">
+      <h1>#RealPeopleRealNuts</h1>
+      <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/5tcAv2G_o10?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+      <div class="vid-content-feature">Bringing stories and insight from the U.S. and the world’s most productive peanut and tree nut farming and manufacturing communities, Golden Peanut and Tree Nuts is committed to its people. Coma survival, the everyday struggle of a farmer’s wife, and the process of adopting four siblings are just a few of the journeys these men and women have undergone. Follow their stories with us.</div>
+      <p class="vid-social">Follow their stories on Instagram and Facebook</p>
+      <div class="vid-icon-social"><a href="https://www.instagram.com/goldenpeanuttreenuts/" target="blank" alt="Instagram"><img src="vid-instagram.svg" alt="Instagram"></a><a href="https://www.facebook.com/GoldenPeanutCompany/" target="blank" alt="Facebook"><img src="vid-facebook.svg" alt="Facebook"></a></div>
+    </section>
+    <!-- End Header -->
+    <div id="vid-page">
+      <!-- Begin Video Template -->
+      <!--
+      <div class="video-module">
+        <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">TITLE HERE</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/LINKHERE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div class="vid-content">DESCRIPTION HERE</div>
+        </section>
+      </div>
+      -->
+      <!-- End Video Template -->
+      <div class="vid-module">
+        <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">A Mother To Golden South Africa</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/PZtJ_wyFzho?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
+          <div class="vid-content">Ilze Viljoen faced an uphill battle when she took on the role of safety manager for Golden Peanut and Tree Nuts in South Africa. Implementing safety measures in a place where those standards aren’t widely practiced was a big challenge, but as she says, Ilze’s a go getter.</div>
+        </section>
+      </div>
+      <div class="vid-module">
+      <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">The Chosen One</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/tDDBBn7d2OM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
+          <div class="vid-content">As a kid, Johannes Wana raised money to pay for his own school uniform. Now a Golden Peanut and Tree Nuts employee in South Africa, he dreams of opening a school for kids like him.</div>
+        </section>
+      </div>
+      <div class="vid-module">
+      <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">Steward of the Land</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/-31TJJq2GI4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div class="vid-content">For farmer Marty McLendon, producing a profitable crop and taking care of the earth that his peanuts and cotton grow in go hand in hand. He worked with agricultural engineers to develop a sustainable irrigation system to water his land that is now used and manufactured all over the world.</div>
+        </section>
+      </div>
+      <div class="vid-module">
+      <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">My Perfect Storm</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/DwAxLDqCrMg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div class="vid-content">After surviving a coma, Golden Peanut and Tree Nuts employee Matt Miller had to start over from the ground up, learning how to cope with a brain injury and navigate school at an age when he expected to be well on his way in a career as a scientist.</div>
+        </section>
+      </div>
+      <div class="vid-module">
+      <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">Money Grows On Trees</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/vsgNZv_nCYw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div class="vid-content">South African farmer Frikkie Nel’s plan to pay for his health care bills and retirement? Growing pecans.</div>
+        </section>
+      </div>
+      <div class="vid-module">
+      <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">Not for Sissies</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/C9bYJpguQ5s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div class="vid-content">Lori Jordan has worked with Golden Peanut and Tree Nuts for 33 years – and she’s learned a thing or two. As a woman in a leadership position in the agricultural industry, her experience has been unique.</div>
+        </section>
+      </div>
+      <div class="vid-module">
+        <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">Like Father Like Son</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/gx2MyK8TkOM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div class="vid-content">Clint White’s great-great grandfather settled in Northern Texas in 1890. Several generations later, Clint and his son Colby are still working the land. But they’ve put their own spin on it: hog training.</div>
+        </section>
+      </div>
+      <div class="vid-module">
+        <hr class="vid-seper">
+        <section class="vid-container">
+          <div class="vid-title">The Crazy Eight</div>
+          <div class="vid-embed"><iframe width="853" height="480" src="https://www.youtube.com/embed/IJkx7A29X2Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div class="vid-content">Golden Peanut and Tree Nuts employee Brandon Harrell talks about the everyday triumphs and travails of raising four adopted brothers and two teenage daughters.</div>
+        </section>
+      </div>
+    </div>
+    <div class="vid-paging">
+      <div id="pagingControls"></div>
+    </div>
+
+    <section class="vid-top">
+      <a href="#videos">Back to Top</a>
+    </section>
+  </div>
+  <script type="text/javascript">
+    var pager = new GoldVid.Pager();
+    $(document).ready(function() {
+        pager.paragraphsPerPage = 5; // set amount elements per page
+        pager.pagingContainer = $('#vid-page'); // set of main container
+        pager.paragraphs = $('div.vid-module', pager.pagingContainer); // set of required containers
+        pager.showPage(1);
+    });
+  </script>
+  <!--END CUSTOM HTML-->
+
+
+  </body>
+</html>
