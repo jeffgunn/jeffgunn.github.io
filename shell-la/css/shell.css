@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 11pt;
   padding-top: 50px;
   background-color: #dde0e6;
   color: #404040;
@@ -9,11 +9,11 @@ p {
   display: block;
   padding-top: 10px;
   /* text-align: justify; */
-  text-justify: inter-word;
+  /* text-justify: inter-word; */
 }
 div.bg-content ul li {
-  text-align: justify;
-  text-justify: inter-word;
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
 }
 a, h4 a {
     color: #404040;
@@ -28,19 +28,19 @@ a:focus {
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-	font-size: 200%;
+	font-size: 18pt;
 }
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-	font-size: 150%;
-	color: #009EB4;
+	font-size: 16pt;
+	color: #DE1D22;
 	/* font-style: italic; */
 }
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-	font-size: 125%;
+	font-size: 14pt;
 }
 
 h4 a {
@@ -227,7 +227,7 @@ button.navbar-toggle.collapsed {
 }
 
 #desktop-banner, #mobile-banner {
-  border-bottom: 4px solid #009EB4;
+  border-bottom: 4px solid #DE1D22;
 }
 #mobile-banner {
   display: none;
@@ -271,7 +271,7 @@ button.navbar-toggle.collapsed {
 
 .hr-sponsors {
   border-top: 0px;
-  border-bottom: 2px #99D8E1 solid;
+  border-bottom: 2px #D9D9D9 solid;
 }
 
 .sponsor-title {
