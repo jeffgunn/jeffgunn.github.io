@@ -1,0 +1,441 @@
+@import 'https://fonts.googleapis.com/css?family=Bitter:400,700,400italic';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800';
+@import 'https://diabetessisters.org/sites/all/themes/diabetes_sisters/css/application.css';
+@import 'https://diabetessisters.org/sites/all/themes/diabetes_sisters/templates/forum/forum.css';
+@import 'https://diabetessisters.org/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css';
+@import 'https://diabetessisters.org/sites/default/files/css/css_-TNq6F6EH1K3WcBMUMQP90OkyCq0Lyv1YnyoEj3kxiU.css';
+@import 'https://diabetessisters.org/sites/default/files/css/css_i7mJvNBMzwzmoVoO3bPosxTeeLGinxcjzt7qNFDz7iI.css';
+@import 'https://diabetessisters.org/sites/default/files/css/css_PGbJgHCUCBf4dg7K9Kt8aAwsApndP4GZ9RuToPy3-Fk.css';
+@import 'https://diabetessisters.org/sites/default/files/css/css_IU8HQL1aqbQapOE-zOqyT4eVk1DGT9Y_QONXQ8Ml3Tw.css';
+
+#btwn-contain-main, #btwn-contain-bio {
+  width: 100%;
+  max-width: 928px;
+  background-color: #fdfcf8;
+}
+
+.btwn-main-title, #btwn-home {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btwn-spon-title, .btwn-about-title {
+  display: block;
+  width: 100%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.btwn-main-title h1, .btwn-spon-title h1 , .btwn-about-title h1 {
+  display: inline-block;
+  font-family: 'Bitter',serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 25px;
+  color: #493c22;
+}
+
+.btwn-main-title i, .btwn-spon-title i {
+  display: inline-block;
+  margin: 0 6px;
+  background-size: 45px 36px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 36px;
+  vertical-align: text-bottom;
+}
+
+.btwn-title-orn-left {
+  background-image: url("images/btwn-textorn-left.gif");
+  background-position: right center;
+}
+
+.btwn-title-orn-right {
+  background-image: url("images/btwn-textorn-right.gif");
+  background-position: left center;
+}
+
+#btwn-storyboard {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 77px 22px 0 22px;
+  width: 900px;
+  height: 860px;
+  background-color: #fcfbf7;
+  background-image: url("images/btwn-storyboard-bg.jpg");
+  background-size: 900px 925px;
+  background-repeat: no-repeat;
+}
+
+#btwn-section-1, #btwn-section-2, #btwn-section-3  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 856px;
+}
+
+#btwn-section-1 {
+  margin-top: 0;
+  height: 210px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#btwn-section-2 {
+  margin-top: 69px;
+  height: 210px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+#btwn-section-3 {
+  margin-top: 75px;
+  height: 210px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.btwn-ftr-pic {
+  display: block;
+  width: 211px;
+  min-width: 211px;
+  height: 210px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 13px;
+  background-color: white;
+}
+
+.btwn-ftr-pic img {
+  position: relative;
+  width: 211px;
+  min-width: 211px;
+  max-width: 211px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.btwn-ftr-pic img:hover {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.btwn-ftr-content {
+  display: block;
+  padding: 18px 25px 0 25px;
+  width: 434px;
+  max-width: 434px;
+  height: 210px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.btwn-ftr-textonly, .btwn-ftr-textvid {
+  background-size: 57px 50px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.btwn-ftr-textonly {
+  background-image: url("images/btwn-legend-textonly.gif");
+}
+
+.btwn-ftr-textvid {
+  background-image: url("images/btwn-legend-textvid.gif");
+}
+
+.btwn-ftr-content h2 {
+  font-family: 'Bitter',serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal !important;
+  line-height: 1.2em;
+  color: #f07714;
+}
+
+.btwn-ftr-content p {
+  display: inline-block;
+  overflow: hidden;
+  height: 100px;
+  margin-top: 2px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: normal !important;
+  color: #777;
+}
+
+.btwn-ftr-content a, #btwn-home a {
+  font-family: 'Bitter',serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+.btwn-ftr-content a:hover, #btwn-home a:hover {
+  color: #78b025;
+}
+.btwn-ftr-space {
+  display: inline-block;
+  width: 211px;
+  min-width: 211px;
+  height: 210px;
+  overflow: hidden;
+}
+
+#btwn-morestories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  margin: 0 auto;
+  padding: 0 22px 0 22px;
+  width: 900px;
+  text-align: center;
+}
+
+.btwn-more-thumb {
+  display: inline-block;
+  position: relative;
+  margin: 10px 0;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.btwn-more-pic {
+  display: block;
+  margin: auto;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 4px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+}
+
+.btwn-more-pic img {
+  position: relative;
+  min-width: 100px;
+  max-width: 100px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.btwn-more-pic img:hover {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.btwn-more-name {
+  display: block;
+  overflow-wrap: break-word;
+  margin: 4px auto;
+  width: 100%;
+  max-width: 140px;
+}
+
+.btwn-more-name a {
+  font-family: 'Bitter',serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal !important;
+  line-height: 1.2em;
+  color: #f07714;
+  text-decoration: none;
+}
+
+#btwn-spon, #btwn-about {
+  display: block;
+  overflow: auto;
+  margin: 20px auto;
+  width: 880px;
+  background-color: white;
+  background-image: url("images/btwn-spon-bg.jpg");
+  background-size: 50%;
+  background-repeat: repeat-x;
+  background-position: left top;
+  box-sizing: border-box;
+  border: 1px solid white;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+}
+
+#btwn-spon-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  margin: 0 auto 20px auto;
+  max-width: 840px;
+  text-align: center;
+}
+
+#btwn-spon-logo img {
+  display: inline-block;
+  max-width: 250px;
+  margin: 10px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#btwn-spon-logo img:hover {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+#btwn-bio-info {
+  display: inline-block;
+  float: right;
+  margin: 0 0 30px 20px;
+  width: 358px;
+  min-height: 370px;
+  background-color: #fdfcf8;
+  background-image: url("images/btwn-bio-bg.jpg");
+  background-size: 358px 370px;
+  background-repeat: no-repeat;
+}
+
+.btwn-bio-pic {
+  display: block;
+  position: relative;
+  float: right;
+  margin-top: 11px;
+  margin-right: 11px;
+  width: 280px;
+  min-width: 280px;
+  height: 281px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 13px;
+  background-color: white;
+}
+
+.btwn-bio-pic img {
+  position: relative;
+  min-width: 280px;
+  max-width: 280px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.btwn-bio-dropcap {
+  float: left;
+  font-family: 'Bitter',serif;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 60px;
+  color: #f07714;
+  padding-top: 0;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.btwn-bio-name, .btwn-bio-title {
+  display: block;
+  position: relative;
+  float: right;
+  margin: 13px auto 6px auto;
+  width: 280px;
+  max-width: 280px;
+  text-align: center;
+}
+
+.btwn-bio-name {
+  margin: 13px auto 0 auto;
+}
+
+.btwn-bio-title {
+  margin: -6px auto 0 auto;
+}
+
+.btwn-bio-name p {
+  font-family: 'Bitter',serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal !important;
+  line-height: 1.2em;
+  overflow-wrap: break-word;
+  color: #f07714;
+  text-decoration: none;
+}
+
+.btwn-bio-title p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: normal !important;
+  overflow-wrap: break-word;
+  color: #777;
+}
+
+ .btwn-bio-quote {
+   width: 90%;
+   margin: 20px auto;
+   font-family: 'Bitter',serif;
+   font-size: 24px;
+   font-weight: bold;
+   font-style: italic;
+   text-align: center;
+   line-height: 1.2em;
+   color: #3c3c3c;
+   text-decoration: none;
+}
+
+.btwn-about-info {
+  display: block;
+  margin: 10px auto 20px auto;
+  width: 840px;
+  max-width: 840px;
+  text-align: left;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: normal;
+}
