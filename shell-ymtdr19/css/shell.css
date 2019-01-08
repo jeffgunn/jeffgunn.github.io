@@ -16,7 +16,7 @@ p {
   text-align: justify;
   text-justify: inter-word;
 }
-div.bg-content ul li {
+div.bg-content ul li {mar
   text-align: justify;
   text-justify: inter-word;
 }
@@ -54,7 +54,7 @@ blockquote {
 .mark, mark {
     color: black;
     font-family: "futura-pt-bold",sans-serif;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 0;
     /*padding: .2em;
     background-color: #fcd130;*/
