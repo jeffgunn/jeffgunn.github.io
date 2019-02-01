@@ -64,10 +64,13 @@ blockquote {
   color: #fff;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
-	font-size: 18pt;
+  font-size: 18pt;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #0072bb;
+  background-color: #0173b9;
+  background-image: -webkit-linear-gradient(#0173b9 0%, #00568d 100%);
+  background-image: -o-linear-gradient(#0173b9 0%, #00568d 100%);
+  background-image: linear-gradient(#0173b9 0%, #00568d 100%);
   padding: 5px 40px;
   border-top: 4px solid #666;
   border-bottom: .0625rem solid #8f58a4;
@@ -84,7 +87,11 @@ blockquote {
 }
 .sched-content {
   display: block;
-  background-color: #efefef;
+  /* background-color: #efefef; */
+  background-color: #fbfbfb;
+  background-image: -webkit-linear-gradient(#fbfbfb 0%, #efefef 100%);
+  background-image: -o-linear-gradient(#fbfbfb 0%, #efefef 100%);
+  background-image: linear-gradient(#fbfbfb 0%, #efefef 100%);
   padding: 10px 15px 5px 15px;
   text-align: center;
   border-bottom: 2px solid #68BB48;
@@ -147,6 +154,8 @@ blockquote {
 .reg-gray {
   background-color: #56555A !important;
 	border-color: #56555A !important;
+  padding-left: 40px;
+  padding-right: 40px;
   }
 .reg-gray:hover {
 	background-color: #434246 !important;
