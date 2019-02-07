@@ -9,8 +9,8 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
 */
-  background-color: #519536;
-  background-image: linear-gradient(180deg, #519536 0%, #6abc49 65%);
+  background-color: #cccccc;
+  background-image: linear-gradient(180deg, #cccccc 0%, #efefef 35%);
   color: #27292e;
 }
 p {
