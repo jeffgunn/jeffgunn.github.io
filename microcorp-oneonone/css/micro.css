@@ -2,15 +2,15 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 11pt;
   padding-top: 50px;
-/*
-  background-color: #5b9b44;
-  background-image: url("../images/bg-page-green.jpg");
+
+  background-color: #a2a2a2;
+  background-image: url("../images/football-bg-gray.jpg");
   background-size: 100%;
   background-position: center top;
   background-repeat: no-repeat;
-*/
-  background-color: #cccccc;
-  background-image: linear-gradient(180deg, #cccccc 0%, #efefef 35%);
+
+  /* background-color: #cccccc;
+  background-image: linear-gradient(180deg, #cccccc 0%, #efefef 35%); */
   color: #27292e;
 }
 p {
