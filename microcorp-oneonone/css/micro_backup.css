@@ -48,11 +48,6 @@ h2 {
 	color: #8e58a4;
 	/* font-style: italic; */
 }
-
-.sched-block h2 {
-  margin-bottom: 20px;
-}
-
 h3 {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -96,8 +91,6 @@ blockquote {
 }
 .sched-content {
   display: block;
-  overflow:auto;
-  margin-bottom: 30px;
   /* background-color: #efefef; */
   background-color: #fbfbfb;
   background-image: -webkit-linear-gradient(#fbfbfb 0%, #efefef 100%);
@@ -106,55 +99,7 @@ blockquote {
   padding: 10px 15px 5px 15px;
   text-align: center;
   border-bottom: 2px solid #68BB48;
-  /* min-height: 95px; */
-}
-
-.section-grade {
-  background-color: #fff;
-  background-image: -webkit-linear-gradient(#fff 0%, #efefef 100%);
-  background-image: -o-linear-gradient(#fff 0%, #efefef 100%);
-  background-image: linear-gradient(#fff 0%, #efefef 100%);
-}
-
-.sched-content-break {
-  display: block;
-  margin-bottom: 30px;
-  background-color: #f2f7fb;
-  background-image: -webkit-linear-gradient(#f2f7fb 0%, #dfeaf1 100%);
-  background-image: -o-linear-gradient(#f2f7fb 0%, #dfeaf1 100%);
-  background-image: linear-gradient(#f2f7fb 0%, #dfeaf1 100%);
-  padding: 10px 15px 5px 15px;
-  text-align: center;
-  border-bottom: 2px solid #68BB48;
-}
-
-.sched-content-end {
-  margin-bottom: 0px;
-}
-
-.sched-content-pic {
-  border-bottom: 1px solid #666;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.sched-smallpics {
-  display: block;
-  margin: 20px 0px;
-  text-align: center;
-}
-
-.img-hof-thumb-left {
-  width: 45%;
-  height: auto;
-  margin-right: 8px;
-  border: 1px solid #666;
-}
-.img-hof-thumb-right {
-  width: 45%;
-  height: auto;
-  margin-left: 8px;
-  border: 1px solid #666;
+  min-height: 95px;
 }
 
 .sched-time {
