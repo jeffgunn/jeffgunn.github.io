@@ -535,6 +535,10 @@ button.navbar-toggle.collapsed {
     display: none;
   }
 
+  .section-content-end {
+  	padding: 20px 40px 180px 40px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -546,6 +550,9 @@ button.navbar-toggle.collapsed {
   }
   .bg-pmtdr-header {
     padding: 60px 20px 0 20px;
+  }
+  .section-content-end {
+  	padding: 20px 40px 160px 40px;
   }
 }
 
