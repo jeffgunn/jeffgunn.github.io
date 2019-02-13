@@ -5,9 +5,10 @@ body {
 
   background-color: #a2a2a2;
   background-image: url("../images/football-bg-gray.jpg");
-  background-size: 100%;
+  background-size: 130%;
   background-position: center top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   /* background-color: #cccccc;
   background-image: linear-gradient(180deg, #cccccc 0%, #efefef 35%); */
@@ -126,6 +127,9 @@ blockquote {
   padding: 10px 15px 5px 15px;
   text-align: center;
   border-bottom: 2px solid #68BB48;
+}
+.sched-content:hover, .sched-content-break:hover {
+	border-bottom: 2px solid #0173BC;
 }
 
 .sched-content-end {
