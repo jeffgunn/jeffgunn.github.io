@@ -60,6 +60,24 @@ h3 {
 	font-size: 14pt;
 }
 
+.date-subtitle {
+	text-align: center;
+	margin-top: -15px;
+/*	padding-top: 0px;*/
+	color: #532d63;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+.date-subtitle-alt {
+	text-align: center;
+	margin-top: -8px;
+/*	padding-top: 0px;*/
+	color: #532d63;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
 h4 a {
   color: #0072bb;
   text-decoration: none;
